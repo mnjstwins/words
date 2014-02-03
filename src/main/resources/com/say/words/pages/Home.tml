@@ -1,0 +1,37 @@
+<html t:type="layout" title="Write Up!"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<body>
+<div style="font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px;">Hello User</div>
+<t:any t:type="SpeechUtils" t:id="speechUtils"></t:any> 
+
+<div style="font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px; ">I will read what you write, Check it out...</div>
+<div class="jumbotron">
+	<table>
+	<tr>
+	<td>
+		<form t:id="takeInputForm" t:type="Form" t:clientValidation="false" t:zone="outputZone">
+			<t:textarea id="inputText" value="inputText" class="form-control" style="width:500px;height:150px; font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px; "></t:textarea>	
+			<!-- <br/><br/> -->
+			<input type="submit" t:type="Submit" value="Submit" class="btn btn-primary" style="font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px;" ></input>
+		</form>
+		</td>
+		<td><div>&nbsp;</div></td>
+		<td>
+		<t:zone t:id="outputZone" t:update="show">
+		<div class="panel panel-primary" style=" overflow:auto; margin-top:-25px; width:500px; height:150px; font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px; ">
+			<div class="panel-heading">
+				<h3 class="panel-title" style="font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px;">What u wrote...</h3>
+			</div>
+			<div class="panel-body" style="font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:16px;">${outputTxt}</div>
+		</div>
+		</t:zone>
+		</td>
+		</tr>
+	</table>
+</div>
+</body>
+      
+</html>
