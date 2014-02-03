@@ -1,9 +1,0 @@
-<html t:type="layout" title="About"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
-      xmlns:p="tapestry:parameter">
-
-	<div class="jumbotron" style="font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px;">
-		<p>This is a test site where you can listen to what you write in English language only.</p>
-		<p>Can be used by kids to learn alphabet sounds etc.</p>
-	</div>
-</html>

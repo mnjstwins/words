@@ -1,9 +1,0 @@
-<html t:type="layout" title="Contact"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
-      xmlns:p="tapestry:parameter">
-
-    <div class="jumbotron" style="font-family: 'Bubblegum Sans', cursive; font-weight: 200; font-size:18px;">
-   	 	<p>Developer: Smita Prasad</p>
-		<p><a href="mailto:sendmita@gmail.com?Subject=Hello%20FromSayWords" target="_top">Send Mail</a></p>
-	</div>
-</html>
